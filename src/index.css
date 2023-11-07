@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.app-container {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input[type="text"], select {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: rgb(0, 186, 149);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list{
+    display: flex !important;
+    /* flex-direction: column !important; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.taskNameCategory{
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+
+}
+span.taskName {
+    width: 400px !important;
+}
+.task-btns {
+    display: flex;
+    gap: 5px;
+}
+
+
+.completed {
+    text-decoration: line-through;
+}
+@media (max-width: 600px) {
+    .input-container {
+        flex-direction: column; /* Keep the column layout for mobile */
+    }
+    input[type="text"], select {
+        width: 100%; /* Make input fields take the full width on mobile */
+    }
+    button{
+        width: 100%; /* Make buttons take the full width on mobile */
+        height: 40px;
+        padding: 5px 15px;
+        cursor: pointer;
+
+    }
+    .buttonB {
+        width: 20PX; /* Make buttons take the full width on mobile */
+        height: 40px;
+        padding: 5px 15px;
+        cursor: pointer;
+
+    }
+    .task-list{
+        display: flex !important;
+        /* flex-direction: column !important; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        margin-bottom: 10px;
+    }
+    .taskNameCategory{
+        display: flex;
+        justify-content: space-between;
+        width: 260px !important;
+    
+    }
+    .task-btns {
+        display: flex;
+    }
+    .delete-btn{
+        /* background: red !important; */
+        width:10px;
+
+    }
+    complete-btn{
+        width:10px;
+        /* background: green !important; */
+    }
+    span.taskName {
+        width: 200px !important;
+    }
+}
